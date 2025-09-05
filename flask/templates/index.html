@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predictive Pulse - Blood Pressure Prediction</title>
+</head>
+<body>
+    <h2>Blood Pressure Prediction</h2>
+    <form action="/predict" method="post">
+        <!-- Example: you can change input fields depending on your dataset features -->
+        <label>Age:</label><br>
+        <input type="text" name="age"><br><br>
+
+        <label>Weight:</label><br>
+        <input type="text" name="weight"><br><br>
+
+        <label>Heart Rate:</label><br>
+        <input type="text" name="heartrate"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
